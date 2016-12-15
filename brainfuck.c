@@ -50,8 +50,8 @@ void char_dot() {
 
 void char_comma() {
   char c;
-  c = getchar();
-  if(c != '\n') memcells[memptr] = c;
+  scanf("%c",&c);
+  if(c != 26) memcells[memptr] = c;
 }
 
 void loopmap(char *code,int len,dict *map) {
