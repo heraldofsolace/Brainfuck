@@ -33,6 +33,9 @@ I have tried to keep the basic algorithm same in all three languages which I'll 
 
 Handling [ and ] is a bit tricky. The rule is <i>" When we encounter a [ we check if the current pointed value is 0 or not. If not, then go on normally. If 0 then jump to the corresponding balancing ]. And when we encounter a ], we go back to its corresponding ["</i>
 To achieve this, inside <b>loopmap</b> we create a map of the indices of [ and ]'s
-First we create a stck. If we encounter a [, we push its index into the stack. When we encounter a ], we pop the stack. this popped value must be its balancing [. So, we map the popped value to the index of ].
+
+First we create a stack. If we encounter a [, we push its index into the stack. When we encounter a ], we pop the stack. this popped value must be its balancing [. So, we map the popped value to the index of ].
+
 Also, if we encounter a ], but the stack is empty, it means that there are more ] than [. We exit showing an error.
+
 And after mapping, if the stack is still empty, it means that there are more [ than ]. we exit showing an error.
