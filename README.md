@@ -11,6 +11,14 @@ I have tried to keep the basic algorithm same in all three languages which I'll 
       
 3. We take the clean code and pass it to a function called <b>evaluate</b>. This function reads the code and evaluates it.
 
+#Usage
+python brainfuck.py filename
+
+ruby brainfuck.rb filename
+
+gcc -o brainfuck brainfuck.c
+./brainfuck filename
+
 #Important variable names:
 
 1. memcells - The memory cells. At the start of the program we initialize it as 30000 zeroes.
