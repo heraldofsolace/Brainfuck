@@ -17,6 +17,7 @@ python brainfuck.py filename
 ruby brainfuck.rb filename
 
 gcc -o brainfuck brainfuck.c
+
 ./brainfuck filename
 
 #Important variable names:
