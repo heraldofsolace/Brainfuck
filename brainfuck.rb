@@ -37,7 +37,7 @@ def char_dot()
 end
 
 def char_comma()
-  c = STDIN.getch.ord
+  c = STDIN.read(1).ord
   if c != 26
     $memcells[$memptr] = c
   end
